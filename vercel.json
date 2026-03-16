@@ -1,8 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "echo 'Static site — no build'",
-  "outputDirectory": ".",
-  "installCommand": "echo 'Skipping install'",
+  "builds": [
+    { "src": "**/*.html", "use": "@vercel/static" },
+    { "src": "**/*.pdf", "use": "@vercel/static" },
+    { "src": "**/*.docx", "use": "@vercel/static" },
+    { "src": "**/*.png", "use": "@vercel/static" },
+    { "src": "**/*.jpeg", "use": "@vercel/static" },
+    { "src": "**/*.jpg", "use": "@vercel/static" },
+    { "src": "**/*.svg", "use": "@vercel/static" },
+    { "src": "**/*.zip", "use": "@vercel/static" }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/george-trosley-adaptive-security.html" }
   ]
