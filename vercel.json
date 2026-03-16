@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "echo 'Static site — no build'",
+  "outputDirectory": ".",
+  "installCommand": "echo 'Skipping install'",
+  "rewrites": [
+    { "source": "/", "destination": "/george-trosley-adaptive-security.html" }
+  ]
+}
