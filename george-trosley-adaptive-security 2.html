@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>George Trosley | Strategic AE for Adaptive Security</title>
+<meta name="description" content="George Trosley: $35M+ enterprise revenue. 134% FY26. Enterprise GTM case for Adaptive Security.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --nav-h:52px;
+  --bg:#FAFAFA;--bg-card:#FFFFFF;--bg-elev:rgba(250,250,250,0.92);
+  --text-primary:#09090b;--text-secondary:#52525b;--text-muted:#a1a1aa;
+  --accent:#09090b;--accent-light:rgba(9,9,11,0.06);--accent-subtle:rgba(9,9,11,0.02);
+  --glow-1:#7c3aed;--glow-2:#3b82f6;--glow-3:#06b6d4;--glow-4:#10b981;
+  --green:#10b981;--green-bg:rgba(16,185,129,0.08);
+  --red:#ef4444;--red-bg:rgba(239,68,68,0.08);
+  --blue:#3b82f6;--blue-bg:rgba(59,130,246,0.08);
+  --purple:#7c3aed;--purple-bg:rgba(124,58,237,0.08);
+  --cyan:#06b6d4;--cyan-bg:rgba(6,182,212,0.08);
+  --border:#e4e4e7;--border-light:#f4f4f5;
+  --surface:#f4f4f5;
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.06);--shadow-md:0 4px 20px rgba(0,0,0,0.08);
+  --grad-bar:linear-gradient(90deg,#7c3aed,#3b82f6,#06b6d4);
+  --grad-text:linear-gradient(135deg,#7c3aed,#3b82f6);
+  --grad-text-wide:linear-gradient(135deg,#7c3aed,#3b82f6,#06b6d4);
+  --radius:12px;--radius-sm:8px;
+  --font-head:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter','Space Grotesk',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+html[data-theme="dark"]{
+  --bg:#0a0a0a;--bg-card:#111111;--bg-elev:rgba(10,10,10,0.92);
+  --text-primary:#f5f5f5;--text-secondary:#b0b0b0;--text-muted:#808080;
+  --accent:#f5f5f5;--accent-light:rgba(255,255,255,0.08);--accent-subtle:rgba(255,255,255,0.03);
+  --glow-1:#FF6B35;--glow-2:#FF8C42;--glow-3:#06b6d4;--glow-4:#10b981;
+  --green:#34d399;--green-bg:rgba(52,211,153,0.12);
+  --red:#f87171;--red-bg:rgba(248,113,113,0.12);
+  --blue:#60a5fa;--blue-bg:rgba(96,165,250,0.12);
+  --purple:#FF6B35;--purple-bg:rgba(255,107,53,0.12);
+  --cyan:#22d3ee;--cyan-bg:rgba(34,211,238,0.12);
+  --border:#252525;--border-light:#1c1c1c;
+  --surface:#151515;
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.5);--shadow-md:0 4px 24px rgba(0,0,0,0.6);
+  --grad-bar:linear-gradient(90deg,#FF6B35,#FF8C42,#06b6d4);
+  --grad-text:linear-gradient(135deg,#FF6B35,#FF8C42);
+  --grad-text-wide:linear-gradient(135deg,#FF6B35,#FF8C42,#22d3ee);
+}
+*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.55;overflow:hidden}
+::selection{background:var(--purple-bg)}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer;border:none;background:none}
+
+.progress-wrap{position:fixed;top:0;left:0;right:0;height:2px;z-index:999;pointer-events:none}
+.progress-bar{height:100%;width:0%;background:var(--grad-bar);transition:width .08s linear;border-radius:0 2px 2px 0}
+
+nav{position:fixed;top:2px;left:0;right:0;height:var(--nav-h);background:var(--bg-elev);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);z-index:100;display:flex;align-items:center;padding:0 20px;gap:10px}
+.nav-logo{display:flex;align-items:center;gap:10px;white-space:nowrap;flex-shrink:0}
+.nav-logo-icon{color:var(--text-primary);flex-shrink:0;height:16px;width:auto}
+.nav-logo-name{font-family:var(--font-head);font-size:13px;font-weight:600;color:var(--text-primary);letter-spacing:-0.01em}
+.nav-logo-for{font-size:12px;color:var(--text-muted);font-family:var(--font-body)}
+.nav-links{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;margin-left:12px}.nav-links::-webkit-scrollbar{display:none}
+.nav-link{padding:5px 10px;font-size:11px;font-weight:600;font-family:var(--font-head);color:var(--text-muted);text-decoration:none;border-radius:7px;white-space:nowrap;transition:all .18s}
+.nav-link:hover{color:var(--text-primary);background:var(--accent-light)}
+.nav-link.active{color:var(--text-primary);background:var(--accent-light)}
+.nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.slide-indicator{font-family:var(--font-mono);font-size:10px;font-weight:500;color:var(--text-muted);padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--bg-card);white-space:nowrap}
+.toggle{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);cursor:pointer;user-select:none}
+.toggle-switch{width:32px;height:18px;border-radius:999px;background:var(--border);position:relative;border:1px solid var(--border);transition:background .2s}
+.toggle-knob{width:14px;height:14px;border-radius:999px;background:var(--text-primary);position:absolute;top:1px;left:1px;box-shadow:var(--shadow-sm);transition:transform .2s}
+html[data-theme="dark"] .toggle-knob{transform:translateX(14px)}
+html[data-theme="light"] .toggle-knob{transform:translateX(0)}
+
+.deck{position:fixed;top:calc(var(--nav-h) + 2px);left:0;right:0;bottom:0;overflow-y:auto;scroll-snap-type:y mandatory;scroll-behavior:smooth;scroll-padding-top:0}
+.slide{scroll-snap-align:start;scroll-snap-stop:always;min-height:calc(100vh - var(--nav-h) - 2px);height:auto;display:flex;align-items:center;justify-content:center;padding:16px}
+.slide-inner{width:min(1080px,100%);display:flex;flex-direction:column;max-height:calc(100vh - var(--nav-h) - 35px)}
+.frame{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow-md);padding:32px;flex:1;overflow:auto;position:relative}
+.slide .frame{opacity:0;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease}
+.slide.in-view .frame{opacity:1;transform:translateY(0)}
+
+h1{font-family:var(--font-head);font-size:clamp(26px,3.2vw,40px);font-weight:700;line-height:1.08;letter-spacing:-0.04em;margin-bottom:12px;color:var(--text-primary)}
+h2{font-family:var(--font-head);font-size:clamp(20px,2.5vw,28px);font-weight:700;line-height:1.1;letter-spacing:-0.03em;margin-bottom:12px;color:var(--text-primary)}
+h3{font-family:var(--font-head);font-size:13px;font-weight:700;color:var(--text-primary);margin-bottom:6px;letter-spacing:-0.02em}
+p,li{font-size:12.5px;color:var(--text-secondary);line-height:1.6}
+.subtitle{font-family:var(--font-body);font-size:13px;color:var(--text-secondary);max-width:720px;line-height:1.65}
+.kicker{display:inline-flex;font-family:var(--font-mono);font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);background:var(--accent-light);padding:5px 11px;border-radius:8px;margin-bottom:12px;width:fit-content;border:1px solid var(--border)}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+
+.card{border:1px solid var(--border);border-radius:var(--radius);padding:14px;background:var(--bg-card)}
+.card-purple{border-left:3px solid var(--purple)}
+.card-green{border-left:3px solid var(--green)}
+.card-blue{border-left:3px solid var(--blue)}
+.card-cyan{border-left:3px solid var(--cyan)}
+.card-red{border-left:3px solid var(--red)}
+ul.clean{list-style:none;padding:0;margin-top:4px}
+ul.clean li{position:relative;padding-left:14px;margin-bottom:4px;font-size:12px}
+ul.clean li::before{content:'';position:absolute;left:0;top:7px;width:4px;height:4px;border-radius:999px;background:var(--purple)}
+
+/* Hero signal grid — dashboard feel */
+.signal-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.signal-card{border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;background:var(--accent-subtle);position:relative;overflow:hidden}
+.signal-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.signal-card.sig-red::before{background:var(--red)}
+.signal-card.sig-purple::before{background:var(--purple)}
+.signal-card.sig-blue::before{background:var(--blue)}
+.signal-card.sig-cyan::before{background:var(--cyan)}
+.signal-card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.signal-card-title{font-family:var(--font-mono);font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted)}
+.signal-card-badge{font-family:var(--font-mono);font-size:8px;font-weight:600;padding:2px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.04em}
+.badge-live{background:var(--red-bg);color:var(--red)}
+.badge-rising{background:var(--purple-bg);color:var(--purple)}
+.badge-high{background:var(--blue-bg);color:var(--blue)}
+.signal-card-val{font-family:var(--font-head);font-size:18px;font-weight:700;color:var(--text-primary);line-height:1.1}
+.signal-card-desc{font-size:10.5px;color:var(--text-muted);margin-top:2px}
+.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin-right:4px}
+
+.cover-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+.cover-stat{text-align:center;padding:14px 10px;border:1px solid var(--border);border-radius:var(--radius);background:var(--accent-subtle);position:relative;overflow:hidden}
+.cover-stat::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad-bar)}
+.cover-stat .val{font-family:var(--font-head);font-size:26px;font-weight:700;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.02em}
+.cover-stat .lbl{font-family:var(--font-mono);font-size:9px;font-weight:500;color:var(--text-muted);margin-top:2px;text-transform:uppercase;letter-spacing:.04em}
+
+.micro-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+.micro-stat{text-align:center;padding:10px 8px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--accent-subtle)}
+.micro-stat .val{font-family:var(--font-head);font-size:14px;font-weight:700;color:var(--green);letter-spacing:-0.01em}
+.micro-stat .lbl{font-family:var(--font-mono);font-size:8px;font-weight:500;color:var(--text-muted);margin-top:2px;text-transform:uppercase;letter-spacing:.04em}
+
+.metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.metric{border:1px solid var(--border);border-radius:var(--radius);padding:12px;background:var(--accent-subtle);text-align:center}
+.metric .value{font-family:var(--font-head);font-size:24px;font-weight:700;background:var(--grad-text-wide);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:3px;letter-spacing:-0.02em}
+.metric .label{font-family:var(--font-mono);font-size:9px;font-weight:500;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.04em}
+
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:11.5px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+thead th{text-align:left;font-family:var(--font-mono);font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);padding:7px 10px;border-bottom:1px solid var(--border);background:var(--accent-subtle)}
+td{padding:7px 10px;border-bottom:1px solid var(--border-light);color:var(--text-secondary);vertical-align:top;font-size:11.5px;font-family:var(--font-body)}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--accent-subtle)}
+
+/* Tabs */
+.tab-bar{display:flex;gap:2px;border:1px solid var(--border);border-radius:var(--radius-sm);padding:3px;background:var(--accent-subtle);margin-bottom:14px;width:fit-content}
+.tab-btn{font-family:var(--font-head);font-size:11px;font-weight:600;padding:6px 14px;border-radius:6px;color:var(--text-muted);cursor:pointer;transition:all .18s;white-space:nowrap}
+.tab-btn:hover{color:var(--text-primary)}
+.tab-btn.active{color:var(--text-primary);background:var(--bg-card);box-shadow:var(--shadow-sm)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* Toggle bar */
+.toggle-bar{display:flex;gap:2px;border:1px solid var(--border);border-radius:var(--radius-sm);padding:3px;background:var(--accent-subtle);margin-bottom:14px;width:fit-content}
+.toggle-btn{font-family:var(--font-head);font-size:11px;font-weight:600;padding:6px 16px;border-radius:6px;color:var(--text-muted);cursor:pointer;transition:all .18s;white-space:nowrap}
+.toggle-btn:hover{color:var(--text-primary)}
+.toggle-btn.active{color:var(--text-primary);background:var(--bg-card);box-shadow:var(--shadow-sm)}
+.toggle-content{display:none}
+.toggle-content.active{display:block}
+
+/* Accordions */
+.acc-wrap{border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;background:var(--bg-card)}
+.acc-head{display:flex;justify-content:space-between;align-items:center;cursor:pointer;user-select:none;padding:12px 14px;font-size:13px;font-weight:600;color:var(--text-primary);background:none;border:none;width:100%;text-align:left;font-family:var(--font-head);transition:background .15s}
+.acc-head:hover{background:var(--accent-subtle)}
+.acc-chev{width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;transition:transform .25s cubic-bezier(.4,0,.2,1);flex-shrink:0}
+.acc-chev svg{width:12px;height:12px;stroke:var(--purple);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.acc-wrap.open .acc-chev{transform:rotate(90deg)}
+.acc-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s cubic-bezier(.4,0,.2,1)}
+.acc-wrap.open .acc-body{grid-template-rows:1fr}
+.acc-body-inner{overflow:hidden}
+.acc-body-inner>div{padding:0 14px 14px}
+
+/* Battlecards */
+.battle-card{cursor:pointer;transition:border-color .3s}
+.battle-card:hover{border-color:var(--purple)}
+.battle-flip-hint{font-family:var(--font-mono);font-size:9px;color:var(--purple);font-weight:500;margin-top:8px;text-align:right}
+.battle-card.flipped{border-color:var(--green)}
+.battle-card.flipped .battle-flip-hint{color:var(--text-muted);animation:none}
+.battle-front,.battle-back{transition:opacity .3s}
+.battle-card .battle-back{display:none}
+.battle-card.flipped .battle-front{display:none}
+.battle-card.flipped .battle-back{display:block}
+.battle-gap-label{font-family:var(--font-mono);font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;color:var(--red)}
+.battle-answer-label{font-family:var(--font-mono);font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;color:var(--green)}
+
+.proof-tag{display:inline-block;font-family:var(--font-mono);font-size:8px;font-weight:500;padding:2px 7px;border-radius:4px;background:var(--green-bg);color:var(--green);text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+
+/* Insight box */
+.insight-box{border:1px solid color-mix(in srgb,var(--purple) 30%,transparent);border-radius:var(--radius);padding:12px 14px;background:color-mix(in srgb,var(--purple) 5%,transparent);margin-top:10px}
+.insight-box .insight-label{font-family:var(--font-mono);font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--purple);margin-bottom:4px}
+.insight-box p{font-size:11.5px;color:var(--text-secondary);line-height:1.6}
+
+/* Glow bg */
+.glow-bg{position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;border-radius:16px;overflow:hidden}
+.glow-bg::before{content:'';position:absolute;top:-40%;left:-20%;width:60%;height:80%;background:radial-gradient(circle,color-mix(in srgb,var(--purple) 8%,transparent) 0%,transparent 70%);filter:blur(40px)}
+.glow-bg::after{content:'';position:absolute;bottom:-30%;right:-10%;width:50%;height:70%;background:radial-gradient(circle,rgba(6,182,212,0.04) 0%,transparent 70%);filter:blur(40px)}
+
+/* Ticker */
+@keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ticker-wrap{overflow:hidden;border:1px solid color-mix(in srgb,var(--purple) 20%,transparent);border-radius:var(--radius-sm);padding:8px 0;margin-top:14px;background:color-mix(in srgb,var(--purple) 4%,transparent)}
+.ticker-track{display:flex;gap:0;animation:ticker-scroll 30s linear infinite;width:max-content;will-change:transform}
+.ticker-item{font-family:var(--font-mono);font-size:10px;font-weight:500;color:var(--purple);white-space:nowrap;padding:0 12px;opacity:.7}
+.ticker-item::after{content:'·';margin-left:12px;color:var(--text-muted)}
+
+/* Timeline */
+.timeline{position:relative;padding-left:20px;margin-top:10px}
+.timeline::before{content:'';position:absolute;left:5px;top:4px;bottom:4px;width:2px;background:var(--border);border-radius:2px}
+.timeline-item{position:relative;margin-bottom:12px}
+.timeline-item::before{content:'';position:absolute;left:-20px;top:5px;width:12px;height:12px;border-radius:50%;border:2px solid var(--purple);background:var(--bg-card)}
+.timeline-item.active::before{background:var(--purple)}
+.timeline-date{font-family:var(--font-mono);font-size:10px;font-weight:500;color:var(--purple);text-transform:uppercase;letter-spacing:.04em}
+.timeline-title{font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--text-primary);margin-top:2px}
+.timeline-desc{font-size:11px;color:var(--text-secondary);line-height:1.5;margin-top:2px}
+
+/* Pipeline flow */
+.pipeline{display:flex;gap:0;margin-top:12px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.pipeline-step{flex:1;padding:12px;border-right:1px solid var(--border);position:relative}
+.pipeline-step:last-child{border-right:none}
+.pipeline-step-num{font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--purple);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.pipeline-step-title{font-family:var(--font-head);font-size:11px;font-weight:700;color:var(--text-primary);margin-bottom:3px}
+.pipeline-step-desc{font-size:10px;color:var(--text-secondary);line-height:1.5}
+
+/* War room territory matrix */
+.territory-matrix{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-top:12px}
+.tm-cell{padding:8px 10px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);font-size:10.5px;color:var(--text-secondary);line-height:1.4}
+.tm-cell:nth-child(5n){border-right:none}
+.tm-cell.tm-header{font-family:var(--font-mono);font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);background:var(--accent-subtle);padding:6px 10px}
+.tm-cell.tm-account{font-family:var(--font-head);font-size:11px;font-weight:700;color:var(--text-primary)}
+.tm-cell.tm-priority{text-align:center}
+.priority-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.priority-dot.p1{background:var(--red)}
+.priority-dot.p2{background:var(--purple)}
+.priority-dot.p3{background:var(--blue)}
+.tm-row-last .tm-cell{border-bottom:none}
+
+/* Deal cards */
+.deal-card{padding:10px 12px;border-radius:var(--radius);border:1px solid var(--border);margin-bottom:6px}
+.deal-card-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px}
+.deal-card-head h3{margin:0;font-size:12.5px}
+.deal-card-val{font-family:var(--font-mono);font-size:11px;font-weight:600;color:var(--green)}
+.deal-card p{font-size:11.5px;margin-top:3px}
+
+/* CTA */
+.cta-name{font-family:var(--font-head);font-size:18px;font-weight:700;color:var(--text-primary)}
+.cta-detail{font-family:var(--font-mono);font-size:11px;color:var(--text-muted);margin-top:2px}
+.cta-buttons{display:flex;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.btn-cta{font-family:var(--font-head);font-size:11px;font-weight:700;padding:8px 20px;border-radius:8px;text-transform:uppercase;letter-spacing:.5px;transition:all .2s;display:inline-block;text-decoration:none}
+.btn-cta-primary{background:var(--text-primary);color:var(--bg);border:1px solid var(--text-primary)}.btn-cta-primary:hover{opacity:.85}
+.btn-cta-outline{background:none;color:var(--text-primary);border:1px solid var(--border)}.btn-cta-outline:hover{background:var(--accent-light)}
+.btn-cta-green{background:none;color:var(--green);border:1px solid var(--green)}.btn-cta-green:hover{background:var(--green-bg)}
+
+.hint{margin-top:auto;padding-top:14px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;color:var(--text-muted);font-size:11px;font-weight:600;font-family:var(--font-head)}
+.kbd{font-family:var(--font-mono);border:1px solid var(--border);background:var(--bg-card);padding:2px 6px;border-radius:4px;color:var(--text-muted);font-size:10px}
+
+.field-label{font-family:var(--font-mono);font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-bottom:2px;margin-top:6px}
+.field-label:first-child{margin-top:0}
+.field-label.green{color:var(--green)}
+
+/* Close section killer line */
+.killer-line{font-family:var(--font-head);font-size:clamp(14px,1.8vw,18px);font-weight:700;color:var(--text-primary);line-height:1.35;letter-spacing:-0.02em;margin-top:14px;padding:14px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+
+/* Source tags for stats */
+.src{font-family:var(--font-mono);font-size:8px;color:var(--text-muted);font-weight:400;opacity:.7;font-style:italic}
+
+/* Pursuit sequence */
+.pursuit-grid{display:grid;grid-template-columns:180px 1fr;gap:0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-top:12px}
+.pursuit-label{font-family:var(--font-mono);font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);padding:8px 12px;background:var(--accent-subtle);border-bottom:1px solid var(--border);border-right:1px solid var(--border);display:flex;align-items:center}
+.pursuit-val{font-size:11.5px;color:var(--text-secondary);padding:8px 12px;border-bottom:1px solid var(--border);line-height:1.5}
+.pursuit-grid .pursuit-label:last-of-type,.pursuit-grid .pursuit-val:last-of-type{border-bottom:none}
+.pursuit-label.pursuit-highlight{color:var(--purple);font-weight:700}
+.pursuit-val.pursuit-highlight{color:var(--text-primary);font-weight:600}
+
+/* Responsive tablet */
+@media(max-width:920px){
+  .grid-3{grid-template-columns:1fr 1fr}
+  .grid-2{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:1fr 1fr}
+  .metric-row,.cover-stats,.micro-stats{grid-template-columns:1fr 1fr}
+  .frame{padding:20px}
+  .pipeline{flex-direction:column}
+  .pipeline-step{border-right:none;border-bottom:1px solid var(--border)}
+  .pipeline-step:last-child{border-bottom:none}
+  .signal-grid{grid-template-columns:1fr 1fr}
+  .territory-matrix{grid-template-columns:1fr;gap:0}
+  .territory-matrix .tm-cell{border-right:none}
+}
+
+/* Responsive mobile */
+@media(max-width:640px){
+  :root{--nav-h:48px}
+  body{overflow:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+  .deck{position:relative;top:0;overflow:visible;scroll-snap-type:none;height:auto;padding-top:var(--nav-h)}
+  .slide{scroll-margin-top:var(--nav-h)}
+  .slide{height:auto;min-height:0;scroll-snap-align:none;scroll-snap-stop:normal;padding:6px 10px;align-items:flex-start}
+  .slide:first-child{padding-top:10px}
+  .slide-inner{width:100%;max-height:none!important}
+  .frame{padding:18px;border-radius:14px;box-shadow:var(--shadow-sm);overflow:visible}
+  nav{padding:0 10px;gap:6px}
+  .nav-logo{gap:6px}
+  .nav-logo-name{font-size:12px}
+  .nav-logo-for{display:none}
+  .nav-logo-icon{display:none}
+  .slide-indicator{display:none}
+  .nav-links{gap:0;margin-left:4px}
+  .nav-link{padding:6px 8px;font-size:10px;font-weight:600}
+  .toggle{padding:3px 8px;border-radius:6px}
+  .toggle-switch{width:28px;height:16px}
+  .toggle-knob{width:12px;height:12px;top:1px;left:1px}
+  html[data-theme="dark"] .toggle-knob{transform:translateX(12px)}
+  h1{font-size:22px;margin-bottom:10px;line-height:1.18}
+  h2{font-size:18px;margin-bottom:8px;line-height:1.18}
+  h3{font-size:12.5px;margin-bottom:4px}
+  p,li{font-size:12px;line-height:1.6}
+  .subtitle{font-size:12px;line-height:1.55}
+  .kicker{font-size:9px;padding:5px 10px;margin-bottom:10px}
+  .grid-2,.grid-3{grid-template-columns:1fr;gap:10px;margin-top:10px}
+  .grid-4{grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+  .metric-row{grid-template-columns:1fr 1fr !important;gap:8px;margin-top:10px}
+  .cover-stats,.micro-stats{grid-template-columns:1fr 1fr !important;gap:8px;margin-top:12px}
+  .cover-stat{padding:12px 8px}
+  .cover-stat .val{font-size:22px}
+  .cover-stat .lbl{font-size:8.5px}
+  .micro-stat{padding:10px 6px}
+  .micro-stat .val{font-size:13px}
+  .micro-stat .lbl{font-size:7.5px}
+  .metric{padding:10px 8px}
+  .metric .value{font-size:18px}
+  .metric .label{font-size:8.5px}
+  .card{padding:12px}
+  ul.clean li{font-size:11.5px;margin-bottom:4px;padding-left:14px;line-height:1.55}
+  ul.clean li::before{top:7px;width:4px;height:4px}
+  table{font-size:10.5px;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:normal}
+  thead th{padding:6px 8px;font-size:8.5px;white-space:nowrap}
+  td{padding:6px 8px;font-size:10.5px}
+  .battle-card{padding:12px!important}
+  .battle-card h3{font-size:12.5px!important}
+  .battle-flip-hint{font-size:8.5px!important;margin-top:6px!important}
+  .pipeline{flex-direction:column}
+  .pipeline-step{border-right:none;border-bottom:1px solid var(--border);padding:12px}
+  .pipeline-step:last-child{border-bottom:none}
+  .cta-name{font-size:18px}
+  .cta-detail{font-size:11px}
+  .btn-cta{font-size:10px;padding:10px 18px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+  .cta-buttons{gap:10px;flex-direction:column}
+  .hint{padding-top:10px;font-size:9.5px}
+  .hint .kbd{display:none}
+  .kbd{font-size:8px;padding:2px 4px}
+  .proof-tag{font-size:7.5px;padding:3px 6px}
+  .glow-bg{display:none}
+  .insight-box{padding:12px}
+  .tab-bar,.toggle-bar{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;gap:4px;padding-bottom:2px}
+  .tab-btn,.toggle-btn{font-size:10.5px;padding:8px 14px;min-height:36px;white-space:nowrap}
+  .timeline{padding-left:18px}
+  .timeline-item::before{left:-18px;width:10px;height:10px}
+  .signal-grid{grid-template-columns:1fr;gap:8px}
+  .signal-card{padding:14px}
+  .signal-card-val{font-size:16px}
+  .signal-card-desc{font-size:11px}
+  .territory-matrix{grid-template-columns:1fr;gap:0}
+  .territory-matrix .tm-cell{border-right:none}
+  .killer-line{font-size:14px;padding:12px 0}
+  .pursuit-grid{grid-template-columns:1fr}
+  .pursuit-label{border-right:none;padding:6px 12px}
+  .pursuit-val{padding:8px 12px;font-size:12px}
+  .field-label{font-size:9px}
+  .src{font-size:7.5px}
+}
+@media(max-width:380px){
+  .frame{padding:14px}
+  h1{font-size:19px}
+  h2{font-size:16px}
+  .subtitle{font-size:11px}
+  .cover-stats,.micro-stats{grid-template-columns:1fr 1fr;gap:6px}
+  .cover-stat .val{font-size:19px}
+  .cover-stat{padding:10px 6px}
+  .metric .value{font-size:16px}
+  .metric{padding:8px 6px}
+  .metric-row{gap:6px}
+  .nav-links{display:none}
+  .nav-logo-name{font-size:11px}
+  .nav-logo-for{display:none}
+  .nav-logo-icon{display:none}
+  .btn-cta{font-size:9px;padding:10px 14px}
+  .signal-card-val{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+  .slide .frame{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+<div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div>
+
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="nav-logo-name">George Trosley</span>
+    <span class="nav-logo-for">for</span>
+    <svg class="nav-logo-icon" height="16" viewBox="0 0 1320 242" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M293.037 191.397C290.903 191.397 289.425 189.266 290.173 187.267L353.758 17.383C354.436 15.5707 356.168 14.3696 358.103 14.3696H386.564C388.501 14.3696 390.234 15.5733 390.911 17.3884L454.253 187.271C454.998 189.269 453.52 191.397 451.387 191.397H427.646C425.713 191.397 423.982 190.199 423.302 188.39L408.42 148.779C408.164 148.098 407.512 147.646 406.784 147.646H336.623C335.895 147.646 335.243 148.098 334.987 148.779L320.105 188.39C319.425 190.199 317.694 191.397 315.761 191.397H293.037ZM343.932 121.69C343.725 122.26 344.147 122.862 344.753 122.862H398.65C399.257 122.862 399.68 122.258 399.47 121.688L372.401 47.9722C372.12 47.2077 371.038 47.2092 370.76 47.9746L343.932 121.69Z" fill="currentColor"/><path d="M526.281 192.915C491.128 192.915 465.08 168.131 465.08 126.656C465.08 86.6981 491.128 60.3969 526.281 60.3969C545.141 60.3969 558.507 67.4299 566.584 77.8079C567.113 78.4883 568.261 78.1253 568.261 77.2632V19.0094C568.261 16.4469 570.339 14.3696 572.901 14.3696H590.935C593.497 14.3696 595.574 16.4469 595.574 19.0094V186.758C595.574 189.32 593.497 191.397 590.935 191.397H575.783C573.492 191.397 571.545 189.727 571.197 187.463L569.086 173.745C568.968 172.977 567.975 172.728 567.492 173.336C558.862 184.208 545.779 192.915 526.281 192.915ZM530.833 169.648C553.593 169.648 568.514 152.451 568.514 127.162C568.514 101.113 553.593 83.6634 530.833 83.6634C508.072 83.6634 493.151 101.113 493.151 126.656C493.151 152.451 508.072 169.648 530.833 169.648Z" fill="currentColor"/><path d="M668.829 192.915C640.505 192.915 620.779 179.005 620.779 154.98C620.779 128.426 639.999 113.505 676.163 113.505H707.914C708.396 113.505 708.787 113.114 708.787 112.632V105.665C708.787 90.7445 698.418 82.3989 680.463 82.3989C665.654 82.3989 655.822 88.1716 652.38 97.5978C651.606 99.7167 649.733 101.366 647.477 101.366H629.751C626.987 101.366 624.815 98.9535 625.42 96.2571C630.416 73.9819 651.361 60.3969 681.727 60.3969C716.121 60.3969 735.847 76.8352 735.847 107.436V159.28C735.847 165.855 738.376 167.625 744.193 167.625H745.117C747.679 167.625 749.756 169.702 749.756 172.265V186.758C749.756 189.32 747.679 191.397 745.117 191.397H735.341C718.397 191.397 711.569 183.558 711.569 171.671C711.569 171.524 711.375 171.467 711.294 171.59C703.174 184.014 689.834 192.915 668.829 192.915ZM672.623 171.671C695.384 171.671 708.787 158.268 708.787 138.289V134.611C708.787 134.128 708.396 133.737 707.914 133.737H674.899C657.955 133.737 648.598 140.059 648.598 152.957C648.598 164.843 657.702 171.671 672.623 171.671Z" fill="currentColor"/><path d="M775.302 241.977C772.739 241.977 770.662 239.899 770.662 237.337V66.554C770.662 63.9915 772.739 61.9142 775.302 61.9142H790.663C792.972 61.9142 794.93 63.6121 795.256 65.8979L797.172 79.3098C797.282 80.0788 798.273 80.3389 798.762 79.7355C807.392 69.0923 820.47 60.3969 839.956 60.3969C875.361 60.3969 901.41 85.1808 901.41 126.656C901.41 166.614 875.361 192.915 840.209 192.915C821.354 192.915 807.99 185.886 799.913 175.309C799.387 174.62 798.228 174.981 798.228 175.847V237.337C798.228 239.899 796.151 241.977 793.588 241.977H775.302ZM835.404 169.648C858.164 169.648 873.338 152.451 873.338 126.656C873.338 101.113 858.164 83.6634 835.404 83.6634C812.896 83.6634 797.722 101.113 797.722 126.403C797.722 152.198 812.896 169.648 835.404 169.648Z" fill="currentColor"/><path d="M966.043 191.397C941.26 191.397 930.891 179.764 930.891 156.245V86.8131C930.891 86.3306 930.5 85.9395 930.017 85.9395H913.023C910.46 85.9395 908.383 83.8622 908.383 81.2997V66.554C908.383 63.9915 910.46 61.9142 913.023 61.9142H930.017C930.5 61.9142 930.891 61.5231 930.891 61.0406V30.3898C930.891 27.8273 932.968 25.75 935.531 25.75H953.564C956.126 25.75 958.204 27.8273 958.204 30.3898V61.0406C958.204 61.5231 958.595 61.9142 959.077 61.9142H986.946C989.509 61.9142 991.586 63.9915 991.586 66.554V81.2997C991.586 83.8622 989.509 85.9395 986.946 85.9395H959.077C958.595 85.9395 958.204 86.3306 958.204 86.8131V153.463C958.204 163.579 961.997 167.372 972.366 167.372H986.946C989.509 167.372 991.586 169.449 991.586 172.012V186.758C991.586 189.32 989.509 191.397 986.946 191.397H966.043Z" fill="currentColor"/><path d="M1018.41 191.397C1015.85 191.397 1013.77 189.32 1013.77 186.758V66.554C1013.77 63.9915 1015.85 61.9142 1018.41 61.9142H1036.7C1039.26 61.9142 1041.34 63.9915 1041.34 66.554V186.758C1041.34 189.32 1039.26 191.397 1036.7 191.397H1018.41Z" fill="currentColor"/><path d="M1109.04 191.397C1107.58 191.397 1106.27 190.486 1105.76 189.113L1060.35 66.0786C1059.6 64.0589 1061.1 61.9142 1063.25 61.9142H1084.87C1086.84 61.9142 1088.59 63.1489 1089.24 64.9977L1122.98 159.733C1123.25 160.509 1124.35 160.507 1124.62 159.73L1157.87 65.0173C1158.52 63.1584 1160.28 61.9142 1162.25 61.9142H1183.35C1185.5 61.9142 1187 64.0589 1186.25 66.0786L1140.83 189.113C1140.33 190.486 1139.02 191.397 1137.56 191.397H1109.04Z" fill="currentColor"/><path d="M1259.81 192.915C1219.09 192.915 1193.55 166.613 1193.55 126.909C1193.55 86.951 1219.09 60.3969 1257.28 60.3969C1294.46 60.3969 1320 84.4221 1320 123.368V129.632C1320 131.34 1318.62 132.725 1316.91 132.725H1223C1222.52 132.725 1222.13 133.116 1222.13 133.599V134.243C1222.13 155.992 1236.8 170.66 1258.29 170.66C1273.84 170.66 1285.55 163.634 1290.31 151.535C1291.08 149.58 1292.88 148.152 1294.98 148.152H1315.04C1316.96 148.152 1318.43 149.9 1317.95 151.769C1312.01 175.275 1290.38 192.915 1259.81 192.915ZM1223.02 111.513C1222.94 112.031 1223.35 112.494 1223.87 112.494H1291.2C1291.72 112.494 1292.13 112.032 1292.06 111.514C1289.45 92.9042 1276.43 82.3989 1257.53 82.3989C1240.64 82.3989 1225.69 93.1434 1223.02 111.513Z" fill="currentColor"/><path d="M1012.52 21.8186C1012.52 16.9936 1016.43 13.0822 1021.26 13.0822H1033.49C1038.31 13.0822 1042.23 16.9936 1042.23 21.8186V34.0497C1042.23 38.8747 1038.31 42.7861 1033.49 42.7861H1021.26C1016.43 42.7861 1012.52 38.8747 1012.52 34.0497V21.8186Z" fill="currentColor"/><path d="M74.215 85.3912C74.215 76.1847 81.6783 68.7214 90.8848 68.7214H122.662C131.868 68.7214 139.331 76.1847 139.331 85.3912V119.773C139.331 128.979 131.868 136.442 122.662 136.442H90.8847C81.6783 136.442 74.215 128.979 74.215 119.773V85.3912Z" fill="currentColor"/><path d="M153.717 0C183.902 0 208.372 24.4699 208.372 54.655V115.371C208.372 116.809 207.206 117.975 205.768 117.975H175.796C174.358 117.975 173.192 116.809 173.192 115.371L171.872 64.6093C171.872 47.6302 160.449 33.8659 143.469 33.8658H66.6108C49.6321 33.8663 36.4652 47.6304 36.4652 64.6093V142.055C36.4652 159.034 49.6321 171.907 66.6108 171.907H124.564C126.002 171.907 127.168 173.073 127.168 174.512V200.558C127.168 201.997 126.002 203.163 124.564 203.163H54.655C24.4699 203.163 0 182.194 0 152.009V54.655C2.09084e-06 24.4699 24.4699 0 54.655 0H153.717Z" fill="currentColor"/><path d="M154.215 162.029C154.215 154.837 160.046 148.086 167.238 148.086H190.374C197.566 148.086 204.163 154.837 204.163 162.029V185.93C204.163 193.123 197.566 199.106 190.374 199.106H167.238C160.046 199.106 154.215 193.123 154.215 185.93V162.029Z" fill="currentColor"/></svg>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#s1" class="nav-link active">Environment</a>
+    <a href="#s2" class="nav-link">Platform</a>
+    <a href="#s3" class="nav-link">Intel</a>
+    <a href="#s4" class="nav-link">Territory</a>
+    <a href="#s5" class="nav-link">Operations</a>
+    <a href="#s6" class="nav-link">Proof</a>
+  </div>
+  <div class="nav-right">
+    <div id="slideIndicator" class="slide-indicator">1 / 6</div>
+    <a href="https://www.linkedin.com/in/georgetrosley/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;opacity:.5;transition:opacity .2s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.5'" aria-label="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <div id="themeToggle" class="toggle" role="button" tabindex="0" aria-label="Toggle theme">
+      <div class="toggle-switch"><div class="toggle-knob"></div></div>
+    </div>
+  </div>
+</nav>
+
+<div id="deck" class="deck">
+
+<!-- ===================== SLIDE 1: HERO — THREAT ENVIRONMENT ===================== -->
+<div class="slide" id="s1">
+<div class="slide-inner">
+<div class="frame">
+
+<div class="kicker">Adaptive Security · Enterprise GTM Case</div>
+<h1>The human layer is the new attack surface.<br>Adaptive is the platform that defends it.</h1>
+
+<div class="signal-grid">
+  <div class="signal-card sig-red">
+    <div class="signal-card-head"><span class="signal-card-title">Voice Deepfake Fraud</span><span class="signal-card-badge badge-live"><span class="status-dot"></span>Active</span></div>
+    <div class="signal-card-val">3,000%+ increase YoY</div>
+    <div class="signal-card-desc">AI voice cloning targeting executives, finance and clinical staff <span class="src">— Sumsub 2024 Identity Fraud Report</span></div>
+  </div>
+  <div class="signal-card sig-purple">
+    <div class="signal-card-head"><span class="signal-card-title">Business Email Compromise</span><span class="signal-card-badge badge-rising">Rising</span></div>
+    <div class="signal-card-val">$2.9B in reported losses (2023)</div>
+    <div class="signal-card-desc">CEO/CFO impersonation driving wire fraud at scale <span class="src">— FBI IC3 2023 Report</span></div>
+  </div>
+  <div class="signal-card sig-blue">
+    <div class="signal-card-head"><span class="signal-card-title">Legacy Awareness Gap</span><span class="signal-card-badge badge-high">Structural</span></div>
+    <div class="signal-card-val">Email-only SAT is obsolete</div>
+    <div class="signal-card-desc">KnowBe4 and Proofpoint cannot simulate voice, SMS or multimodal attacks</div>
+  </div>
+  <div class="signal-card sig-cyan">
+    <div class="signal-card-head"><span class="signal-card-title">Budget Shift</span><span class="signal-card-badge badge-rising">Accelerating</span></div>
+    <div class="signal-card-val">Training completion → risk reduction</div>
+    <div class="signal-card-desc">CISOs buying platforms that quantify behavioral risk, not compliance checkboxes</div>
+  </div>
+</div>
+
+<div class="cover-stats">
+  <div class="cover-stat"><div class="val">$146.5M</div><div class="lbl">Raised</div></div>
+  <div class="cover-stat"><div class="val">500+</div><div class="lbl">Enterprise Customers</div></div>
+  <div class="cover-stat"><div class="val">150+</div><div class="lbl">Team</div></div>
+  <div class="cover-stat"><div class="val">Tier-1</div><div class="lbl">OpenAI + NVIDIA + a16z</div></div>
+</div>
+
+<div class="micro-stats">
+  <div class="micro-stat"><div class="val">$35M+</div><div class="lbl">Career Revenue</div></div>
+  <div class="micro-stat"><div class="val">134%</div><div class="lbl">FY26 Attainment</div></div>
+  <div class="micro-stat"><div class="val">2x</div><div class="lbl">Presidents Club</div></div>
+  <div class="micro-stat"><div class="val">Founder</div><div class="lbl">Built &amp; Exited Platform</div></div>
+</div>
+
+<div class="hint">↓ Scroll to explore <span class="kbd">↑</span><span class="kbd">↓</span></div>
+</div>
+</div>
+</div>
+
+<!-- ===================== SLIDE 2: PLATFORM + REVENUE ARCHITECTURE ===================== -->
+<div class="slide" id="s2">
+<div class="slide-inner">
+<div class="frame">
+<div class="kicker">Platform Architecture · Revenue Motion</div>
+<h2>Every product pillar is a sales wedge.</h2>
+
+<div class="tab-bar" id="tabBar2">
+  <div class="tab-btn active" onclick="switchTab('tab2','t2-product')">Product → Sales</div>
+  <div class="tab-btn" onclick="switchTab('tab2','t2-revenue')">Revenue Motion</div>
+</div>
+
+<!-- TAB: Product → Sales -->
+<div class="tab-content active" id="t2-product" data-group="tab2">
+<div class="grid-2">
+  <div class="card card-purple">
+    <h3>Security Awareness Training</h3>
+    <div class="field-label">Wedge</div><p>Compliance-driven initial purchase → CISO, HR/L&D</p>
+    <div class="field-label">Expands into</div><p>Simulation, risk monitoring, enterprise platform</p>
+    <div class="field-label green">My Fit</div><p>Reframed awareness → risk reduction in healthcare and pharma</p>
+  </div>
+  <div class="card card-blue">
+    <h3>Phishing Simulations</h3>
+    <div class="field-label">Wedge</div><p>Displacement of static legacy tools → SecOps, CISO</p>
+    <div class="field-label">Expands into</div><p>Triage, behavioral analytics, risk scoring</p>
+    <div class="field-label green">My Fit</div><p>Displaced incumbents through threat realism and measurable outcomes</p>
+  </div>
+  <div class="card card-cyan">
+    <h3>Phish Triage</h3>
+    <div class="field-label">Wedge</div><p>SOC efficiency (40+ hrs/month saved) → SOC, IT</p>
+    <div class="field-label">Expands into</div><p>Enterprise reporting, platform consolidation</p>
+    <div class="field-label green">My Fit</div><p>Sold consolidation: fragmented point tools → unified enterprise agreements</p>
+  </div>
+  <div class="card card-green">
+    <h3>Risk Monitoring &amp; Reporting</h3>
+    <div class="field-label">Wedge</div><p>Board-level urgency and executive reporting → CISO, compliance</p>
+    <div class="field-label">Expands into</div><p>Enterprise remediation and platform standardization</p>
+    <div class="field-label green">My Fit</div><p>Platform-level risk narratives in health systems and enterprise</p>
+  </div>
+</div>
+</div>
+
+<!-- TAB: Revenue Motion -->
+<div class="tab-content" id="t2-revenue" data-group="tab2">
+<div class="pipeline">
+  <div class="pipeline-step"><div class="pipeline-step-num">01</div><div class="pipeline-step-title">Trigger Event</div><div class="pipeline-step-desc">Deepfake fraud, executive impersonation, compliance gap or board AI conversation</div></div>
+  <div class="pipeline-step"><div class="pipeline-step-num">02</div><div class="pipeline-step-title">Live Simulation</div><div class="pipeline-step-desc">Voice, SMS, email and deepfake scenarios against prospect's actual threat profile</div></div>
+  <div class="pipeline-step"><div class="pipeline-step-num">03</div><div class="pipeline-step-title">Controlled Pilot</div><div class="pipeline-step-desc">30-60 days in high-visibility dept with success criteria tied to behavioral risk reduction</div></div>
+  <div class="pipeline-step"><div class="pipeline-step-num">04</div><div class="pipeline-step-title">Success Metrics</div><div class="pipeline-step-desc">Measurable risk reduction, operational efficiency and executive-level reporting</div></div>
+  <div class="pipeline-step"><div class="pipeline-step-num">05</div><div class="pipeline-step-title">Enterprise Expand</div><div class="pipeline-step-desc">Geos, functions, subsidiaries → multi-year enterprise agreement</div></div>
+</div>
+<div class="insight-box">
+  <div class="insight-label">How I Sell</div>
+  <p>Isolated technical interest → multi-threaded business case → measurable risk → platform deal. Every major win followed this sequence.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ===================== SLIDE 3: COMMAND CENTER ===================== -->
+<div class="slide" id="s3">
+<div class="slide-inner">
+<div class="frame">
+<div class="kicker">Command Center · Buyer &amp; Competitive Intel</div>
+<h2>Know the buyer. Know the competitor. Win.</h2>
+
+<div class="toggle-bar" id="cmdToggle">
+  <div class="toggle-btn active" onclick="switchToggle('cmd','cmd-buyer')">By Buyer</div>
+  <div class="toggle-btn" onclick="switchToggle('cmd','cmd-competitor')">By Competitor</div>
+</div>
+
+<!-- TOGGLE: By Buyer -->
+<div class="toggle-content active" id="cmd-buyer" data-group="cmd">
+
+<div class="acc-wrap">
+  <button class="acc-head" onclick="toggleAcc(this)">CISO / Security Leadership<span class="acc-chev"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span></button>
+  <div class="acc-body"><div class="acc-body-inner"><div>
+    <div class="field-label" style="color:var(--red)">Objection</div><p>"This sounds like another KnowBe4."</p>
+    <div class="field-label" style="color:var(--green)">Winning Message</div><p>Adaptive is the platform that quantifies and reduces human risk across every social engineering vector including AI-generated threats.</p>
+    <div class="field-label" style="color:var(--purple)">Why I Win This</div><p>CISO-level sponsorship and board urgency in regulated enterprises (St. Luke's, Sanofi, Penn State Health)</p>
+  </div></div></div>
+</div>
+
+<div class="acc-wrap">
+  <button class="acc-head" onclick="toggleAcc(this)">Security Awareness / Human Risk<span class="acc-chev"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span></button>
+  <div class="acc-body"><div class="acc-body-inner"><div>
+    <div class="field-label" style="color:var(--red)">Objection</div><p>"We just renewed KnowBe4."</p>
+    <div class="field-label" style="color:var(--green)">Winning Message</div><p>Adaptive replaces the assumption that training completion equals risk reduction.</p>
+    <div class="field-label" style="color:var(--purple)">Why I Win This</div><p>Consistently reframed feature evaluations into platform-level risk narratives</p>
+  </div></div></div>
+</div>
+
+<div class="acc-wrap">
+  <button class="acc-head" onclick="toggleAcc(this)">Security Operations / IT<span class="acc-chev"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span></button>
+  <div class="acc-body"><div class="acc-body-inner"><div>
+    <div class="field-label" style="color:var(--red)">Objection</div><p>"This adds another tool."</p>
+    <div class="field-label" style="color:var(--green)">Winning Message</div><p>Phish triage saves 40+ hours/month. Consolidates simulation, triage and reporting into one pane.</p>
+    <div class="field-label" style="color:var(--purple)">Why I Win This</div><p>Navigated IT and engineering approval at Sanofi (4-layer) and multi-site health systems</p>
+  </div></div></div>
+</div>
+
+<div class="acc-wrap">
+  <button class="acc-head" onclick="toggleAcc(this)">GRC / Compliance<span class="acc-chev"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span></button>
+  <div class="acc-body"><div class="acc-body-inner"><div>
+    <div class="field-label" style="color:var(--red)">Objection</div><p>"How is this different from what we have?"</p>
+    <div class="field-label" style="color:var(--green)">Winning Message</div><p>Measurable reduction in human risk. Audit-ready evidence, not just content completion.</p>
+    <div class="field-label" style="color:var(--purple)">Why I Win This</div><p>Deals requiring security + compliance alignment in regulated industries with multi-layer approvals</p>
+  </div></div></div>
+</div>
+
+<div class="acc-wrap">
+  <button class="acc-head" onclick="toggleAcc(this)">Executive Office / HR / Recruiting<span class="acc-chev"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span></button>
+  <div class="acc-body"><div class="acc-body-inner"><div>
+    <div class="field-label" style="color:var(--red)">Objection</div><p>"Is this really our problem?"</p>
+    <div class="field-label" style="color:var(--green)">Winning Message</div><p>Deepfake voice fraud targeting your CEO is a brand and liability problem. Not a training problem.</p>
+    <div class="field-label" style="color:var(--purple)">Why I Win This</div><p>Executive stakeholders in brand-sensitive healthcare and financial services environments</p>
+  </div></div></div>
+</div>
+</div>
+
+<!-- TOGGLE: By Competitor -->
+<div class="toggle-content" id="cmd-competitor" data-group="cmd">
+<div class="grid-2">
+  <div class="card battle-card" onclick="this.classList.toggle('flipped')">
+    <div class="battle-front">
+      <h3>KnowBe4</h3>
+      <div class="battle-gap-label">Gap</div>
+      <p>Static content. No AI simulation. No voice/SMS/deepfake. Training completion, not risk scoring.</p>
+      <div class="battle-flip-hint">↻ Flip</div>
+    </div>
+    <div class="battle-back">
+      <h3>KnowBe4</h3>
+      <div class="battle-answer-label">Adaptive Wins</div>
+      <p>Multimodal simulation, behavioral risk scoring, AI threat realism.</p>
+      <div class="proof-tag" style="margin-top:6px">Proof</div>
+      <p style="font-size:11px;margin-top:3px">Feature comparison → platform risk. TCO + consolidation narrative.</p>
+      <div class="battle-flip-hint">↻ Flip back</div>
+    </div>
+  </div>
+
+  <div class="card battle-card" onclick="this.classList.toggle('flipped')">
+    <div class="battle-front">
+      <h3>Proofpoint SAT</h3>
+      <div class="battle-gap-label">Gap</div>
+      <p>Email-only bolt-on inside email security suite. No standalone human-risk platform.</p>
+      <div class="battle-flip-hint">↻ Flip</div>
+    </div>
+    <div class="battle-back">
+      <h3>Proofpoint SAT</h3>
+      <div class="battle-answer-label">Adaptive Wins</div>
+      <p>Purpose-built platform with simulation realism and behavioral analytics.</p>
+      <div class="proof-tag" style="margin-top:6px">Proof</div>
+      <p style="font-size:11px;margin-top:3px">Executive urgency around threats bolt-on modules cannot address.</p>
+      <div class="battle-flip-hint">↻ Flip back</div>
+    </div>
+  </div>
+
+  <div class="card battle-card" onclick="this.classList.toggle('flipped')">
+    <div class="battle-front">
+      <h3>Hoxhunt</h3>
+      <div class="battle-gap-label">Gap</div>
+      <p>Phishing-only. Gamification without full SE coverage. No voice/SMS/impersonation.</p>
+      <div class="battle-flip-hint">↻ Flip</div>
+    </div>
+    <div class="battle-back">
+      <h3>Hoxhunt</h3>
+      <div class="battle-answer-label">Adaptive Wins</div>
+      <p>Full SE surface: voice, SMS, email, deepfake. Board-level reporting.</p>
+      <div class="proof-tag" style="margin-top:6px">Proof</div>
+      <p style="font-size:11px;margin-top:3px">Point-tool evaluations → strategic platform narratives.</p>
+      <div class="battle-flip-hint">↻ Flip back</div>
+    </div>
+  </div>
+
+  <div class="card battle-card" onclick="this.classList.toggle('flipped')">
+    <div class="battle-front">
+      <h3>Status Quo</h3>
+      <div class="battle-gap-label">Gap</div>
+      <p>"We already have something." Renewal inertia. No urgency. No risk framework.</p>
+      <div class="battle-flip-hint">↻ Flip</div>
+    </div>
+    <div class="battle-back">
+      <h3>Status Quo</h3>
+      <div class="battle-answer-label">Adaptive Wins</div>
+      <p>AI social engineering is the trigger. Board-level urgency legacy awareness cannot address.</p>
+      <div class="proof-tag" style="margin-top:6px">Proof</div>
+      <p style="font-size:11px;margin-top:3px">$25M+ pipeline from whitespace. Urgency around platform risk.</p>
+      <div class="battle-flip-hint">↻ Flip back</div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ===================== SLIDE 4: WAR ROOM — TERRITORY + PURSUIT ===================== -->
+<div class="slide" id="s4">
+<div class="slide-inner">
+<div class="frame">
+<div class="kicker">Territory Operations · War Room</div>
+<h2>Sample territory model and pursuit sequence.</h2>
+
+<div class="tab-bar" id="tabBar4">
+  <div class="tab-btn active" onclick="switchTab('tab4','t4-matrix')">Territory Model</div>
+  <div class="tab-btn" onclick="switchTab('tab4','t4-pursuit')">Pfizer Pursuit</div>
+</div>
+
+<!-- TAB: Territory Model -->
+<div class="tab-content active" id="t4-matrix" data-group="tab4">
+<p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-style:italic">Hypothetical territory plan based on public signals. Account assumptions would be validated with Adaptive's ICP data and territory assignments.</p>
+
+<div class="territory-matrix">
+  <div class="tm-cell tm-header">Account</div>
+  <div class="tm-cell tm-header">Priority</div>
+  <div class="tm-cell tm-header">Trigger Hypothesis</div>
+  <div class="tm-cell tm-header">Likely Entry / Incumbent</div>
+  <div class="tm-cell tm-header">Relevant Experience</div>
+
+  <div class="tm-cell tm-account">Mayo Clinic</div>
+  <div class="tm-cell tm-priority"><span class="priority-dot p1"></span> P1</div>
+  <div class="tm-cell">76K employees. EHR phishing + deepfake voice</div>
+  <div class="tm-cell">CISO → compliance. KnowBe4 likely</div>
+  <div class="tm-cell">$1.65M + $1.32M health system deals</div>
+
+  <div class="tm-cell tm-account">JPMorgan Chase</div>
+  <div class="tm-cell tm-priority"><span class="priority-dot p1"></span> P1</div>
+  <div class="tm-cell">Voice fraud in wealth mgmt. Regulatory pressure</div>
+  <div class="tm-cell">CISO / fraud risk. Proofpoint or internal</div>
+  <div class="tm-cell">OneSpan: fraud prevention in regulated FI</div>
+
+  <div class="tm-cell tm-account">Pfizer</div>
+  <div class="tm-cell tm-priority"><span class="priority-dot p1"></span> P1</div>
+  <div class="tm-cell">IP theft via SE. Exec impersonation across sites</div>
+  <div class="tm-cell">Security + compliance. Status quo</div>
+  <div class="tm-cell">Sanofi ($745K): 4-layer, vendor override</div>
+
+  <div class="tm-cell tm-account">HCA Healthcare</div>
+  <div class="tm-cell tm-priority"><span class="priority-dot p1"></span> P1</div>
+  <div class="tm-cell">180+ hospitals. HIPAA. Distributed comms</div>
+  <div class="tm-cell">CISO / awareness. Legacy or none</div>
+  <div class="tm-cell">$3.3M+ combined health system wins</div>
+
+  <div class="tm-cell tm-account">Honeywell</div>
+  <div class="tm-cell tm-priority"><span class="priority-dot p2"></span> P2</div>
+  <div class="tm-cell">100K+ employees. 50+ subs. Consolidation</div>
+  <div class="tm-cell">CISO / IT. Fragmented point tools</div>
+  <div class="tm-cell">AMETEK ($685K): 20+ sub land-expand</div>
+
+  <div class="tm-cell tm-account">Snowflake</div>
+  <div class="tm-cell tm-priority"><span class="priority-dot p2"></span> P2</div>
+  <div class="tm-cell">Fake applicants. Dev credential phishing</div>
+  <div class="tm-cell">Security / CISO. Hoxhunt or none</div>
+  <div class="tm-cell">Verkada: greenfield territory, 157%</div>
+</div>
+
+<div class="insight-box" style="margin-top:10px">
+  <div class="insight-label">Prioritization Logic</div>
+  <p>P1 = regulated industry + 10K employees + active SE threat signal or legacy awareness renewal window. These are where I build pipeline fastest.</p>
+</div>
+</div>
+
+<!-- TAB: Pfizer Pursuit — end-to-end sequence -->
+<div class="tab-content" id="t4-pursuit" data-group="tab4">
+<p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-style:italic">Hypothetical pursuit model. Demonstrates how I sequence an enterprise deal from trigger to expansion.</p>
+
+<div class="pursuit-grid">
+  <div class="pursuit-label pursuit-highlight">Target</div>
+  <div class="pursuit-val pursuit-highlight">Pfizer — global pharma, 90K+ employees, 80+ sites</div>
+
+  <div class="pursuit-label">Why Now</div>
+  <div class="pursuit-val">AI-generated executive impersonation across global sites. IP theft via social engineering. Compliance modernization under FDA/EMA pressure. Legacy awareness vendor likely up for renewal.</div>
+
+  <div class="pursuit-label">Likely Incumbent</div>
+  <div class="pursuit-val">KnowBe4 or status quo. Email-only simulation. No voice, SMS or deepfake coverage.</div>
+
+  <div class="pursuit-label">First Contact</div>
+  <div class="pursuit-val">VP Security or Director of Security Awareness. Hypothesis: frustrated with training-completion metrics that do not map to real risk. Secondary thread: compliance lead under regulatory pressure.</div>
+
+  <div class="pursuit-label">Discovery Angle</div>
+  <div class="pursuit-val">"How are you measuring human risk beyond training completion? What happens when an attacker clones your CFO's voice and calls the treasury team?" Frame around AI-era threat gap, not product features.</div>
+
+  <div class="pursuit-label">Pilot Design</div>
+  <div class="pursuit-val">45-day controlled pilot in one high-visibility division (e.g. R&D or Finance). Voice + SMS + email simulations. Success criteria: behavioral risk score reduction, SOC triage hours saved, exec-ready reporting.</div>
+
+  <div class="pursuit-label">Success Metric</div>
+  <div class="pursuit-val">Measurable reduction in click-through + voice compliance rates. Board-ready risk dashboard showing before/after exposure. SOC efficiency gain from phish triage automation.</div>
+
+  <div class="pursuit-label">Internal Alignment</div>
+  <div class="pursuit-val">Minimum 3 threads before pilot: security leadership (sponsor), compliance (accelerator), IT/procurement (technical validation). Executive sponsor identified before procurement engagement.</div>
+
+  <div class="pursuit-label">Procurement Blockers</div>
+  <div class="pursuit-val">Multi-layer approval similar to Sanofi: platform team, R&D security, IT security, procurement. Strategy: build executive sponsorship early to override vendor-mandate inertia. Map legal/MSA timeline in parallel.</div>
+
+  <div class="pursuit-label pursuit-highlight">Expansion Path</div>
+  <div class="pursuit-val pursuit-highlight">Land in one division → expand to 5-10 sites in year one → enterprise-wide platform agreement across all 80+ sites. Reference: Sanofi followed this exact pattern (single site → 6-site expansion in progress).</div>
+</div>
+
+<div class="insight-box" style="margin-top:10px">
+  <div class="insight-label">Why This Is Credible</div>
+  <p>This is not hypothetical strategy. It mirrors the exact motion I ran at Sanofi: 4-layer approval, vendor mandate override, executive sponsorship, multi-site expansion. The pursuit sequence is the same. The account is different.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ===================== SLIDE 5: HOW I WIN ===================== -->
+<div class="slide" id="s5">
+<div class="slide-inner">
+<div class="frame">
+<div class="kicker">Operating System · How I Win Deals</div>
+<h2>This is how I operate in enterprise white space.</h2>
+
+<div class="tab-bar" id="tabBar5">
+  <div class="tab-btn active" onclick="switchTab('tab5','t5-90day')">First 90 Days</div>
+  <div class="tab-btn" onclick="switchTab('tab5','t5-inspect')">Deal Inspection</div>
+</div>
+
+<!-- TAB: First 90 Days -->
+<div class="tab-content active" id="t5-90day" data-group="tab5">
+<div class="timeline">
+  <div class="timeline-item active">
+    <div class="timeline-date">Days 1–15</div>
+    <div class="timeline-title">Territory Intelligence</div>
+    <div class="timeline-desc">Segment by regulated-industry urgency, executive exposure and incumbent replacement windows. Map named accounts. Build internal relationships with SE, marketing, product.</div>
+    <div class="proof-tag" style="margin-top:6px">Proof: built $25M+ pipeline from ~80% whitespace at Everpure</div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-date">Days 16–45</div>
+    <div class="timeline-title">Displacement Campaigns</div>
+    <div class="timeline-desc">Multi-threaded outbound: CISO, security awareness, compliance, executive. Pilot frameworks tied to risk metrics, not feature demos. Displacement positioning vs KnowBe4/Proofpoint.</div>
+    <div class="proof-tag" style="margin-top:6px">Proof: 6 net-new logos at Verkada from greenfield. 157% attainment</div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-date">Days 46–90</div>
+    <div class="timeline-title">Pipeline Conversion</div>
+    <div class="timeline-desc">Multithread pilots into procurement, legal, business alignment before they stall as isolated technical wins. Convert to enterprise agreements. Build vertical reference base.</div>
+    <div class="proof-tag" style="margin-top:6px">Proof: St. Luke's, Penn State Health, Sanofi — all multi-layer procurement</div>
+  </div>
+</div>
+</div>
+
+<!-- TAB: Deal Inspection -->
+<div class="tab-content" id="t5-inspect" data-group="tab5">
+<div class="grid-2">
+  <div class="card card-purple">
+    <h3>MEDDPICC Applied to Adaptive</h3>
+    <ul class="clean">
+      <li><strong>Metrics:</strong> measurable risk reduction the champion will present</li>
+      <li><strong>Economic Buyer:</strong> CISO or VP Security with budget authority</li>
+      <li><strong>Decision Process:</strong> procurement, legal, security review mapped</li>
+      <li><strong>Champion:</strong> validated advocate with authority, not just a coach</li>
+      <li><strong>Competition:</strong> KnowBe4, Proofpoint, Hoxhunt or status quo</li>
+    </ul>
+  </div>
+  <div class="card card-blue">
+    <h3>Challenger Reframe</h3>
+    <div class="field-label" style="color:var(--red)">Default Frame</div>
+    <p>"We need better awareness training"</p>
+    <div class="field-label" style="color:var(--green)">Reframe</div>
+    <p>You don't have an awareness problem. You have a human-risk measurement problem. Training completion is not risk reduction.</p>
+  </div>
+  <div class="card card-green">
+    <h3>Qualification Gates</h3>
+    <ul class="clean">
+      <li>Confirmed pain tied to AI-era social engineering</li>
+      <li>Economic buyer identified with urgency driver</li>
+      <li>Decision process and timeline mapped</li>
+      <li>Champion validated (not just a coach)</li>
+      <li>Success criteria defined before pilot starts</li>
+    </ul>
+  </div>
+  <div class="card card-cyan">
+    <h3>Multi-Thread Standard</h3>
+    <ul class="clean">
+      <li>Minimum 3 stakeholder threads before pilot</li>
+      <li>Executive sponsor identified before procurement</li>
+      <li>Technical validation separate from business case</li>
+      <li>Expansion path mapped before initial contract</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ===================== SLIDE 6: PROOF + CLOSE ===================== -->
+<div class="slide" id="s6">
+<div class="slide-inner">
+<div class="frame">
+
+<div class="kicker">Enterprise Proof · The Close</div>
+
+<div class="deal-card"><div class="deal-card-head"><h3>St. Luke's University Health Network</h3><span class="deal-card-val">$1.65M</span></div><p>Multi-site platform. Displaced incumbent. Security, IT, procurement, executive leadership.</p></div>
+<div class="deal-card"><div class="deal-card-head"><h3>Penn State Health</h3><span class="deal-card-val">$1.32M</span></div><p>Parallel approvals: clinical informatics, IT security, procurement. Risk reduction won.</p></div>
+<div class="deal-card"><div class="deal-card-head"><h3>Sanofi</h3><span class="deal-card-val">$745K</span></div><p>4-layer approval. Overrode vendor mandate via executive sponsorship. 6-site expansion.</p></div>
+<div class="deal-card"><div class="deal-card-head"><h3>AMETEK</h3><span class="deal-card-val">$685K</span></div><p>20+ subsidiaries. TCO modeling displaced incumbent. Point solutions → single platform.</p></div>
+<div class="deal-card"><div class="deal-card-head"><h3>Tower Health</h3><span class="deal-card-val">$373K</span></div><p>Net-new. Three vendors displaced. Four-thread motion. Security review + ROI justified.</p></div>
+
+<div class="metric-row" style="margin-top:14px">
+  <div class="metric"><div class="value">$35M+</div><div class="label">Career Revenue</div></div>
+  <div class="metric"><div class="value">134%</div><div class="label">FY26 Attainment</div></div>
+  <div class="metric"><div class="value">2x</div><div class="label">Presidents Club</div></div>
+  <div class="metric"><div class="value">Founder</div><div class="label">Built &amp; Exited Platform</div></div>
+</div>
+
+<div class="killer-line">Adaptive has category momentum, market timing and a platform that works. I have the enterprise motion, the regulated-industry credibility and the deal proof to convert it. That is the fit.</div>
+
+<div style="text-align:center;margin-top:16px">
+  <div class="cta-name">George Trosley</div>
+  <div class="cta-detail">215-756-6768 · george.trosley@gmail.com · Pennsylvania &amp; New Jersey</div>
+  <div class="cta-buttons">
+    <a href="https://www.linkedin.com/in/georgetrosley/" target="_blank" class="btn-cta btn-cta-primary">Connect on LinkedIn</a>
+    <a href="https://www.linkedin.com/in/georgetrosley/details/featured/" target="_blank" class="btn-cta btn-cta-outline">View Resume</a>
+    <a href="mailto:george.trosley@gmail.com" class="btn-cta btn-cta-green">Email George</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- /deck -->
+
+<script>
+/* Theme */
+const themeToggle=document.getElementById('themeToggle');
+themeToggle.addEventListener('click',()=>{
+  const html=document.documentElement;
+  html.dataset.theme=html.dataset.theme==='dark'?'light':'dark';
+});
+themeToggle.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();themeToggle.click()}});
+
+/* Scroll progress & slide tracking */
+const deck=document.getElementById('deck');
+const slides=document.querySelectorAll('.slide');
+const navLinks=document.querySelectorAll('.nav-link');
+const progressBar=document.getElementById('progressBar');
+const slideIndicator=document.getElementById('slideIndicator');
+
+function isMobile(){return window.innerWidth<=640}
+function getScrollEl(){return isMobile()?document.documentElement:deck}
+
+function updateProgress(){
+  const el=getScrollEl();
+  const st=isMobile()?window.scrollY:deck.scrollTop;
+  const sh=(isMobile()?document.body.scrollHeight-window.innerHeight:deck.scrollHeight-deck.clientHeight);
+  progressBar.style.width=(sh>0?(st/sh)*100:0)+'%';
+}
+
+function updateSlide(){
+  const ch=window.innerHeight;
+  let idx=0;
+  slides.forEach((s,i)=>{
+    const r=s.getBoundingClientRect();
+    const navH=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'));
+    if(r.top<ch/2+navH)idx=i;
+  });
+  slideIndicator.textContent=(idx+1)+' / '+slides.length;
+  navLinks.forEach((l,i)=>{l.classList.toggle('active',i===idx)});
+}
+
+deck.addEventListener('scroll',()=>{updateProgress();updateSlide()},{passive:true});
+window.addEventListener('scroll',()=>{if(isMobile()){updateProgress();updateSlide()}},{passive:true});
+
+/* IntersectionObserver for slide animations */
+function setupObserver(){
+  const root=isMobile()?null:deck;
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{e.target.classList.toggle('in-view',e.isIntersecting)});
+  },{root:root,threshold:0.12});
+  slides.forEach(s=>obs.observe(s));
+  return obs;
+}
+let activeObs=setupObserver();
+
+/* Keyboard nav */
+document.addEventListener('keydown',e=>{
+  if(['ArrowDown','ArrowRight'].includes(e.key)){e.preventDefault();const idx=getCurrentSlide();if(idx<slides.length-1)slides[idx+1].scrollIntoView({behavior:'smooth'})}
+  if(['ArrowUp','ArrowLeft'].includes(e.key)){e.preventDefault();const idx=getCurrentSlide();if(idx>0)slides[idx-1].scrollIntoView({behavior:'smooth'})}
+});
+function getCurrentSlide(){
+  const ch=deck.clientHeight;let idx=0;
+  slides.forEach((s,i)=>{if(s.getBoundingClientRect().top<ch/2+60)idx=i});
+  return idx;
+}
+
+/* Nav link smooth scroll */
+navLinks.forEach((l,i)=>{l.addEventListener('click',e=>{
+  e.preventDefault();
+  if(isMobile()){
+    const navH=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'));
+    const y=slides[i].getBoundingClientRect().top+window.scrollY-navH-4;
+    window.scrollTo({top:y,behavior:'smooth'});
+  } else {
+    slides[i].scrollIntoView({behavior:'smooth'});
+  }
+})});
+
+/* Tabs */
+function switchTab(group,targetId){
+  document.querySelectorAll('[data-group="'+group+'"]').forEach(c=>c.classList.remove('active'));
+  document.getElementById(targetId).classList.add('active');
+  const barMap={tab2:'tabBar2',tab4:'tabBar4',tab5:'tabBar5'};
+  const bar=document.getElementById(barMap[group]);
+  if(bar){bar.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));event.target.classList.add('active')}
+}
+
+/* Toggle (buyer/competitor) */
+function switchToggle(group,targetId){
+  document.querySelectorAll('[data-group="'+group+'"]').forEach(c=>c.classList.remove('active'));
+  document.getElementById(targetId).classList.add('active');
+  const bar=document.getElementById('cmdToggle');
+  bar.querySelectorAll('.toggle-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+
+/* Accordion */
+function toggleAcc(btn){btn.closest('.acc-wrap').classList.toggle('open')}
+
+/* Init */
+updateProgress();updateSlide();
+</script>
+</body>
+</html>
